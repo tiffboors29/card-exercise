@@ -1,25 +1,49 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: averta, helvetica, arial, sans-serif;
+  background-color: #f5f6f7;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  align-content: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  min-height: 100vh;
+  flex-flow: column nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  align-content: center;
+  align-self: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  flex: 1 1 100%;
+}
+
+.card-wrapper {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  max-width: 100%;
+  width: 100%;
+  align-self: stretch;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-right: calc(50% - 348px);
+  padding-left: calc(50% - 348px);
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+}
+
+.card-header {
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
@@ -29,4 +53,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.plus {
+  position: relative;
+  display: inline-block;
+}
+
+.plus::before {
+  content: "+";
+  font-size: 1.4em;
+  display: inline-block;
+  line-height: 0.87;
+  width: 1em;
+}
+
+.plus::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -1.5px;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: currentcolor;
+  border-image: initial;
+}
+
+a {
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: rgb(0, 145, 234);
+  cursor: pointer;
+  background: transparent;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.786;
 }

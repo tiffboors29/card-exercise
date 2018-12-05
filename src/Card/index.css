@@ -1,0 +1,199 @@
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(208, 210, 214) 0px 0px 3px 0px, rgb(208, 210, 214) 0px 1px 2px 0px;
+  flex: 1 1 100%;
+  padding: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 700px;
+}
+
+.card-body {
+  position: relative;
+  padding-bottom: 32px;
+  height: 468px;
+  transition: height 250ms ease-in-out 0s;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+
+/* tab styles */
+
+.tab-group {
+  display: flex;
+  flex: 1 1 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(208, 210, 214);
+  border-image: initial;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.styled-tab {
+  flex: 1 1 100px;
+  display: flex;
+  align-self: stretch;
+  cursor: pointer;
+  flex-flow: row wrap;
+  padding: 8px;
+  background: rgb(255, 255, 255);
+  border-right: 1px solid rgb(208, 210, 214);
+}
+
+.styled-tab:first-of-type {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.styled-tab:last-of-type {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-right: none;
+}
+
+.active-tab {
+  display: flex;
+  align-self: stretch;
+  cursor: pointer;
+  flex-flow: row wrap;
+  padding: 8px;
+  border-right: 1px solid rgb(208, 210, 214);
+  background: rgb(208, 210, 214);
+  color: rgb(6, 20, 42);
+}
+
+.tab-icon {
+  width: 24px;
+  height: auto;
+  margin: 8px auto;
+  vertical-align: middle;
+}
+
+.tab-text {
+  align-self: flex-end;
+  text-align: center;
+  flex: 1 1 100%;
+  color: rgb(6, 20, 42);
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: inherit;
+  font-size: 14px;
+  margin: 0px;
+}
+
+
+/* styled cards (term loan, line of credit */
+
+.styled-card {
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(208, 210, 214);
+  border-image: initial;
+  flex: 1 1 auto;
+  padding: 32px;
+  border-radius: 4px;
+  margin: 0px auto;
+}
+
+.styled-card-icon {
+  margin: 0px auto;
+  width: 100px;
+}
+
+.styled-card > .term-loan-svg {
+  color: rgb(217, 163, 128);
+  width: 100px;
+  margin: 0px auto;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.line-credit-icon {
+  width: 100px;
+}
+
+.header {
+  font-size: 20px;
+  line-height: 30px;
+}
+.styled-card .copy {
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+
+
+/* credit card */
+
+.credit-card {
+  flex: 1 1 100%;
+}
+
+.section {
+  margin: 8px 0px;
+  flex: 1 1 100%;
+}
+
+.section .header {
+  margin: 0 0 3px 0;
+}
+
+.status {
+  background-color: rgb(220, 232, 227);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.credit-data-wrapper {
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  border-top: 1px solid rgb(208, 210, 214)
+}
+
+.credit-data-header {
+  display: flex;
+  flex: 1 1 100%;
+  padding: 8px 0px 0px;
+}
+
+.credit-data-header .label {
+  display: block;
+  color: rgb(6, 20, 42);
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.credit-data-header .value {
+  display: block;
+  color: rgb(6, 20, 42);
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0px 24px 0px auto;
+  padding: 0px 0px 0px 8px;
+}
+
+.indicator {
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  background-color: rgb(0, 187, 139);
+  border-radius: 50%;
+}
